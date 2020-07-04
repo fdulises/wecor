@@ -1,0 +1,142 @@
+/*Encabezado*/
+header{box-shadow: 0px 2px 5px rgba(0,0,0,.4); }
+header .logored{max-height: 40px;}
+header a:hover .phantom-white {background-color: #303F9F; cursor: pointer;}
+header .fr{
+	display: flex;
+	justify-content: center;
+}
+.header-board{background-color: #7B1FA2; padding-bottom: 0px; padding-top: 20px;}
+.navigation{background-color: #9C27B0; margin-top: 30px;}
+header .phantom-white{border: 1px solid #fff; padding: 8px 12px;}
+@media all and (max-width:400px){header .phantom-white{ padding: 8px; font-size: 10px; }}
+header .phantom-white span{font-family: sans-serif;}
+nav ul{padding-top: 35px;}
+@media all and (max-width:800px){nav ul{padding-top: 0px !important;}}
+nav ul .btn-material{background-color: #9C27B0;}
+nav ul .btn-material:hover{background-color: #303F9F;}
+.btn-menu a{display: inline-block;}
+/*nav ul li span{font-size: 14px;}*/
+
+/*SlideShow*/
+.deb-slide{width: 100%; min-height: 500px;}
+@media all and (max-width:800px){
+	.deb-slide{
+		min-height: 170px;
+	}
+}
+.deb-slide ul, .deb-slide li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+.deb-slide ul{
+	position: relative;
+	transition: height .5s;
+}
+
+.deb-slide li a{text-align: center; width: 100%; display: block;}
+.deb-slide li a > img{display: inline-block;}
+.deb-slide li{position: absolute;}
+
+.deb-slide li{
+	opacity: 0;
+	transition: .5s all;
+	z-index: 1;
+}
+.deb-slide li[data-state="active"]{
+	opacity: 1;
+	z-index: 5;
+}
+.deb-s-p{left: 20px;z-index: 6;position: relative;}
+.deb-s-n{left: -20px;z-index: 6;position: relative;}
+
+
+/*Main Index*/
+.cards-raych-1 .sombra button:hover{cursor: pointer;}
+.cards-raych-1 .sombra a{display: inline-block;}
+main .cards-raych-1 .sombra h4 {padding-bottom: 20px;}
+main .cards-raych-1 .sombra h3 {padding-top: 25px;}
+/*main .cards-raych-1 .sombra p, main .cards-raych-1 .sombra span {padding-bottom: 0; margin-bottom: 0;}*/
+.cards-raych-1 h4, .cards-raych-1 p{margin-bottom: -20px; padding-bottom: 0px; text-align: center;}
+.cards-raych-1 h1{color: #212121; font-size: 30px;}
+.order-grids{display: flex; flex-flow: row wrap;}
+
+.rc-letterneon {
+	color: #fe5461;
+    font-weight: 700;
+}
+@media all and (max-width:800px){
+	.rc-letterneon {
+	font-weight: 560;
+}
+}
+
+@media all and (max-width:600px){
+	.container .container{ padding: 0; width:100%;}
+}
+
+
+/*Aside*/
+.card-aside p{padding:  0 !important;}
+aside .cards-raych-1{overflow: hidden !important;}
+.cards-raych-1 iframe{max-width: 100% !important;}
+.cards-raych-1 figure{max-width: 100% !important;}
+.cards-raych-1 p img{max-width: 100% !important; display: block;}
+
+/*Paginacion*/
+.pagination_s1{text-align: center; display: block; width: 100%;}
+.pagination_s1 a {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 2px;
+    padding: 10px 15px;
+}
+.pagination_s1 a.active{font-weight: bold;}
+
+/*Pie de Pagina*/
+footer .icon-twitter{color: #fff;}
+footer .icon-instagram{color: #fff;}
+footer .icon-facebook{color: #fff;}
+footer{background-color: rgba(0,0,0,.9); padding:75px;}
+footer ul li{list-style: none;}
+@media all and (max-width: 600px){footer{flex-direction: column;} footer .gd-33{ margin-bottom: 30px;}}
+
+
+/*Categorias del Buscador*/
+#cont-categories a button{margin-bottom: -60px; cursor: pointer;}
+.li-cover[data-state="active"] {
+    animation: lightfadeIn 0.5s;
+    overflow: auto;
+}
+@media all and (max-width: 800px){ #cont-categories{ max-width: 200px!important;} }
+
+/*Radio*/
+#radiostream audio {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 200;
+	/*background-color: #9C27B0;
+	border-radius: 35px;*/
+}
+
+/*MENU*/
+@media all and (max-width:600px){
+	/*MENU*/
+	[data-state="hide"]#contMenu {
+		left: -75%;
+	}
+	.navigation{min-width: 75%; z-index: 50; margin-top: 71px;}
+	/*Contenido*/
+	main[class*="gd-"]{padding: 0!important; width: 100%;}
+	.cards-raych-1[class*="gd-"]{padding: 0!important; width: 100%;}
+}
+/*BoxSearch*/
+#BoxSearch .li-cover{background-color: rgba(0,0,0,.4);}

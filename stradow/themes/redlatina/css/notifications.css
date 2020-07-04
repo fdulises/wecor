@@ -1,0 +1,120 @@
+/*
+ *API de Notificaciones Debred 2019 v.1 
+ * Esta API a sido desarrollada por el equipo de Debred
+ *
+ */
+.rc-notify{
+    width: 20%;
+    height: 30px;
+    box-shadow: 1px 3px 6px rgba(0,0,0,.5);
+    border-radius: 2px;
+    position: fixed;
+    padding: 14px;
+    z-index: 80;
+    box-sizing: content-box;
+    opacity: .9;
+    cursor: pointer;
+}
+.rc-notify:hover{opacity: 1 !important;}
+.rc-danger{
+    display: flex !important;
+    background-color: #dc3545;
+    color: #fff;
+    justify-content: left;
+    align-items: center;
+    font-family:  sans-serif;
+    transition: .5s all;
+    flex-direction: row-reverse !important;
+}
+.rc-success{
+    display: flex !important;
+    background-color: #28a745;
+    color: #fff;
+    justify-content: left;
+    align-items: center;
+    font-family:  sans-serif;
+    transition: .5s all;
+    flex-direction: row-reverse !important;
+}
+.rc-warning{
+    display: flex !important;
+    background-color: #ffc107;
+    color: #fff;
+    justify-content: left;
+    align-items: center;
+    font-family:  sans-serif;
+    transition: .5s all;
+    flex-direction: row-reverse !important;
+}
+.rc-info{
+    display: flex !important;
+    background-color: #17a2b8;
+    color: #fff;
+    justify-content: left;
+    align-items: center;
+    font-family:  sans-serif;
+    transition: .5s all;
+    flex-direction: row-reverse !important;
+}
+.rc-TR{
+    top:12px;
+    right:12px;  
+}
+.rc-CR{
+    top:45%;
+    right:12px;  
+}
+.rc-BR{
+    top: 90%;
+    right:12px;  
+}
+.rc-CC{
+    top: 45%;
+    right: 38%;  
+}
+.rc-TL{
+    top:12px;
+    left:12px;
+}
+.rc-CL{
+    top:45%;
+    left:12px;
+}
+.rc-BL{
+    top: 90%;
+    left:12px;  
+}
+.icon-warning:before,.icon-eye:before,.icon-check:before,.icon-info-circle:before{
+  margin-right: 10px;
+  font-size: 26px;
+}
+[data-state="closed"].rc-notify{display: none !important; }
+[data-state="opened"].rc-notify{ display: block; animation: rc-mymove 8s; }
+@keyframes rc-mymove{
+    0%{transform: scale(0);}
+    10%{transform: scale(1);}
+    50% {opacity: .8; }
+    100% {opacity: 0;}
+}
+/*Adaptacion a dispositivos moviles*/
+@media all and (max-width: 800px){
+    .rc-notify{font-size: 14px;}
+    .rc-notify .icon-warning:before,.rc-notify .icon-eye:before,.rc-notify .icon-check:before,.rc-notify .icon-info-circle:before{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 600px){
+    .rc-notify{font-size: 12px; width: 30%;}
+    .rc-notify .icon-warning:before,.rc-notify .icon-eye:before,.rc-notify .icon-check:before,.rc-notify .icon-info-circle:before{
+        margin-right: 8px;
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 400px){
+    .rc-notify{font-size: 12px; width: 35%;}
+    .rc-notify .icon-warning:before,.rc-notify .icon-eye:before,.rc-notify .icon-check:before,.rc-notify .icon-info-circle:before{
+        margin-right: 8px;
+        font-size: 20px;
+    }
+}

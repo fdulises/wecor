@@ -1,0 +1,3 @@
+.liwedit-cont[data-state="full"] label:first-child{
+	display: none;
+}
