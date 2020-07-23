@@ -45,7 +45,7 @@
 				</button>
 				<ul class="bx-right">
 					<li><a href="<?php echo config::get('site_url') ?>/">Inicio</a></li>
-					<li><a href="<?php echo config::get('site_url') ?>/blog">Blog</a></li>
+					<li><a href="<?php echo config::get('site_url') ?>/code">Documentación</a></li>
 					<li><a href="<?php echo config::get('site_url') ?>/contacto">Contacto</a></li>
 				</ul>
 			</div>

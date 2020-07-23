@@ -17,10 +17,10 @@
 	routes::add( function( $url ){
 		$data = [];
 		$result = post::get([
-			'slug' => $url, 'type' => 'page', 'columns' => [ 'p.id', 'p.title', 'p.slug', 'p.descrip', 'p.updated', 'p.cover', 'p.coverlocal', 'p.content' ],
+			'slug' => $url, 'columns' => [ 'p.id', 'p.type', 'p.title', 'p.slug', 'p.descrip', 'p.updated', 'p.cover', 'p.coverlocal', 'p.content' ],
 		]);
 		if( $result ){
-			$data['controller'] = 'page';
+			$data['controller'] = $result['type'];
 			$data['params'] = $result;
 		}
 		return $data;
