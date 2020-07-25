@@ -17,7 +17,7 @@
 	//Definimos el enlace a la raiz de la aplicacion
 	$protocol = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
 	$port = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]);
-	$approot = trim($protocol.$_SERVER['SERVER_NAME'].$port.dirname($_SERVER['SCRIPT_NAME']), '/');
+	$approot = trim($protocol.$_SERVER['SERVER_NAME'].$port.dirname($_SERVER['SCRIPT_NAME']), '/\\');
 	define( 'APP_ROOT', $approot );
 	define( 'APP_ROOT_DIR', realpath( __DIR__ ) );
 	define( 'APP_SEC_DIR', realpath( __DIR__ . '/app/sec') );

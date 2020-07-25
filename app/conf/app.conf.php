@@ -49,7 +49,7 @@
 	}else header('location: '.APP_ROOT."/install");
 
 	define("THEME_DIR",config::get('theme_dir'));
-	define("THEME_URL",APP_ROOT."/".THEME_DIR);
+	define("THEME_URL",config::get('site_url')."/".THEME_DIR);
 	define("THEME_PATH",realpath(APP_ROOT_DIR."/".THEME_DIR));
 
 	define("PLUGINS_DIR", "plugins");

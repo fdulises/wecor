@@ -1,6 +1,6 @@
 <?php
 /* Datos de conexion con la base de datos */
-define('DB_INSTALLED', true);
+define('DB_INSTALLED', false);
 define('DB_CONECTOR', 'conectorMysqli');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');

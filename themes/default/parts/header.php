@@ -12,7 +12,7 @@
 
 	<meta name="description" content="<?php echo site::getMeta('description'); ?>"/>
 
-	<link rel="icon" href="<?php echo site::getMeta('icon') ?>" />
+	<link rel="icon" href="<?php echo site::getMeta('pagelink') ?>/favicon.ico" />
 	<link rel="canonical" href="<?php echo site::getMeta('pagelink') ?>" />
 
 	<meta name='og:type' content='article' >
@@ -21,14 +21,13 @@
 	<meta name='og:url' content='<?php echo site::getMeta('pagelink') ?>' >
 	<meta name='og:image' content='<?php echo site::getMeta('cover') ?>' >
 
-	<link rel="stylesheet" href="<?php echo THEME_URL ?>/css/fonts.css">
-	<link rel="stylesheet" href="<?php echo THEME_URL ?>/css/listefi.css">
+	<link rel="stylesheet" href="<?php echo THEME_URL ?>/css/fonts.min.css">
+	<link rel="stylesheet" href="<?php echo THEME_URL ?>/css/listefi.min.css">
 	<link rel="stylesheet" href="<?php echo THEME_URL ?>/css/style.css">
-	<link rel="stylesheet" href="<?php echo THEME_URL ?>/css/highlight-monokai.css">
 
 	<script>
 	var SITIO_SEC = "<?php echo basename($controller, ".php") ?>";
-	var APP_ROOT = "<?php echo APP_ROOT ?>";
+	var APP_ROOT = "<?php echo config::get('site_url') ?>";
 	</script>
 </head>
 <body>
@@ -44,9 +43,7 @@
 					<span class="line"></span>
 				</button>
 				<ul class="bx-right">
-					<li><a href="<?php echo config::get('site_url') ?>/">Inicio</a></li>
-					<li><a href="<?php echo config::get('site_url') ?>/blog">Blog</a></li>
-					<li><a href="<?php echo config::get('site_url') ?>/contacto">Contacto</a></li>
+					<li><a href="<?php echo config::get('site_url') ?>">Inicio</a></li>
 				</ul>
 			</div>
 		</nav>

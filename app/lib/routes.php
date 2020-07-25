@@ -49,7 +49,6 @@
 					if( preg_match( $route, $url, $resultpreg ) ){
 						$result['controller'] = self::$actions[$route];
 						$result['params'] = $resultpreg;
-						break;
 					}
 				}
 			}
