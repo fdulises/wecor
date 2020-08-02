@@ -12,7 +12,7 @@
 
 	<meta name="description" content="<?php echo site::getMeta('description'); ?>"/>
 
-	<link rel="icon" href="<?php echo site::getMeta('pagelink') ?>/favicon.ico" />
+	<link rel="icon" href="<?php echo site::getMeta('site_url') ?>/favicon.ico" />
 	<link rel="canonical" href="<?php echo site::getMeta('pagelink') ?>" />
 
 	<meta name='og:type' content='article' >

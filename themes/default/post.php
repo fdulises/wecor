@@ -25,7 +25,7 @@
 	require THEME_PATH.'/parts/header.php';
 ?>
 	<div id="" class="pd-sec bg-blue bg-animated">
-		<div class="container cont-800">
+		<div class="container cont-850">
 			<div class="tx-center">
 				<h1><?php echo $post['title'] ?></h1>
 				<p><?php echo $post['descrip'] ?></p>
@@ -33,7 +33,7 @@
 		</div>
 	</div>
 	<div class="bg-default pd-sec">
-		<div class="container cont-700">
+		<div class="container cont-850">
 			<p class="tx-center"><img src="<?php echo $post['cover'] ?>" alt="<?php echo $post['title'] ?>" class="cover"></p>
 			<?php echo $post['content'] ?>
 		</div>

@@ -1,2 +1,0 @@
-User-agent: * Disallow: 
-Sitemap: https://neuralpin.xyz/sitemap.xml
