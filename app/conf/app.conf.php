@@ -48,8 +48,8 @@
 		DB::setTablePref(DB_PREF);
 	}else header('location: '.APP_ROOT."/install");
 
-	define("THEME_DIR",config::get('theme_dir'));
-	define("THEME_URL",config::get('site_url')."/".THEME_DIR);
+	define("THEME_DIR", 'front');
+	define("THEME_URL",APP_ROOT."/".THEME_DIR);
 	define("THEME_PATH",realpath(APP_ROOT_DIR."/".THEME_DIR));
 
 	define("PLUGINS_DIR", "plugins");
@@ -57,6 +57,6 @@
 	define("PLUGINS_URL", APP_ROOT."/plugins");
 
 	//Cargamos el paquete de idioma seleccionado
-	$sitelang = config::get('site_lang');
+	$sitelang = 'es';
 	$lang_url = THEME_DIR.'/lang/'.$sitelang.'.php';
 	if( file_exists($lang_url) ) require $lang_url;
